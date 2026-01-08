@@ -1,30 +1,26 @@
-<script setup lang="ts">
+<script setup >
 
 import {ref} from 'vue'
 
-//Reactive Veriable
-
-const message = ref("hello bhaiyo")
-
-const ChangeWord = () =>
-{
-message.value = "Wah wah"
-}
-
-const BackWord =()=>
-{
-  message.value ="hello bhaiyo"
-}
+import Count from './count.vue'
+import User  from './object.vue'
+import ForLoop  from './forloop.vue'
 
 </script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-   {{message}}
-  </p>
-  <button @click="ChangeWord" > next</button>
-<button @click="BackWord" > back</button>
+ 
+
+<Count />
+
+<p>-------------------------</p>
+
+<User  />
+
+<p>------------------------</p>
+
+<ForLoop />
+
 </template>
 
 <style scoped></style>
